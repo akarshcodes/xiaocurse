@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         creepySound.loop = true;
         creepySound.play();
 
-        // Add blood drips
+        
         for (let i = 0; i < 10; i++) {
             const bloodDrip = document.createElement('div');
             bloodDrip.classList.add('blood-drip');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.appendChild(bloodDrip);
         }
 
-        // Add floating Arabic text
+        
         const arabicTexts = [
             'إِنَّا لِلّهِ وَإِنَّـا إِلَيْهِ رَاجِعونَ',
             'الْمَلَائِكَةُ يُحَاسِبُونَكُمْ',
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.appendChild(floatingText);
         }
 
-        // Simulate system hang with overlay and popup
+       
         setTimeout(() => {
             const overlay = document.createElement('div');
             overlay.classList.add('fullscreen-overlay');
@@ -64,16 +64,16 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.appendChild(overlay);
             overlay.classList.add('show');
 
-            // Disable interactions to mimic system hang
+            
             document.body.style.pointerEvents = 'none';
 
-            // Play additional creepy sounds
+            
             const creepySound2 = document.getElementById('creepySound2');
             const creepySound3 = document.getElementById('creepySound3');
             creepySound2.loop = true;
             creepySound3.loop = true;
             creepySound2.play();
             creepySound3.play();
-        }, 5000); // Delay to show overlay and popup
+        }, 5000); 
     });
 });
